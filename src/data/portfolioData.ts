@@ -50,7 +50,7 @@ export const PORTFOLIO_DATA = {
     email: "suvassuva8@gmail.com",
     phone: "95918135617",
     phoneFormatted: "+91 95918135617",
-    github: "https://github.com",
+    github: "https://github.com/suvassuva",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     stats: [
@@ -130,7 +130,7 @@ export const PORTFOLIO_DATA = {
       tags: ["Next.js", "Three.js", "R3F", "GLSL", "TypeScript", "Zustand"],
       metrics: "60 FPS on mobile • 150ms TTFB",
       liveUrl: "https://example.com/hyperion",
-      githubUrl: "https://github.com/example/hyperion-3d",
+      githubUrl: "https://github.com/suvassuva/vasug",
       featured: true,
       accentColor: "#FFB800",
       bulletPoints: [
@@ -148,7 +148,7 @@ export const PORTFOLIO_DATA = {
       tags: ["React 19", "Next.js", "Tailwind CSS", "Node.js", "PostgreSQL", "SSE"],
       metrics: "450k+ daily events • Sub-50ms latency",
       liveUrl: "https://example.com/nexus",
-      githubUrl: "https://github.com/example/nexus-ai",
+      githubUrl: "https://github.com/suvassuva/vasug",
       featured: true,
       accentColor: "#38BDF8",
       bulletPoints: [
@@ -166,7 +166,7 @@ export const PORTFOLIO_DATA = {
       tags: ["TypeScript", "WebSockets", "Canvas API", "Tailwind CSS", "Redis"],
       metrics: "$12M+ monthly volume • 99.99% uptime",
       liveUrl: "https://example.com/aurora",
-      githubUrl: "https://github.com/example/aurora-terminal",
+      githubUrl: "https://github.com/suvassuva/vasug",
       featured: true,
       accentColor: "#10B981",
       bulletPoints: [
@@ -184,7 +184,7 @@ export const PORTFOLIO_DATA = {
       tags: ["React", "Storybook", "Tailwind CSS", "Radix UI", "npm Package"],
       metrics: "12,000+ weekly npm downloads",
       liveUrl: "https://example.com/chronos",
-      githubUrl: "https://github.com/example/chronos-ds",
+      githubUrl: "https://github.com/suvassuva/vasug",
       featured: false,
       accentColor: "#A855F7",
       bulletPoints: [

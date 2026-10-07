@@ -72,7 +72,7 @@ export default function Footer() {
 
             {/* GitHub */}
             <a
-              href="https://github.com"
+              href="https://github.com/suvassuva"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 sm:p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-purple-400/40 hover:bg-purple-500/10 text-slate-300 hover:text-white transition-all hover:scale-105 active:scale-95"
