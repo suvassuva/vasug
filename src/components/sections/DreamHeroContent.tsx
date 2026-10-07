@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Code2 } from "lucide-react";
+import { Code2, ChevronDown, FileText } from "lucide-react";
 
 export interface Chapter {
   id: string;
@@ -160,7 +160,7 @@ export default function DreamHeroContent({
           </motion.div>
         </AnimatePresence>
 
-        {/* Action CTAs */}
+        {/* Action CTAs & Sweet and Short Scroll Indicator */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -176,6 +176,42 @@ export default function DreamHeroContent({
             <span>GitHub Repositories</span>
             <Code2 className="w-3.5 h-3.5 text-purple-400" />
           </a>
+
+          {/* Resume Button */}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-amber-500/15 via-orange-500/15 to-purple-500/15 hover:from-amber-500/25 hover:to-purple-500/25 border border-amber-400/30 hover:border-amber-400/60 text-amber-200 hover:text-white font-medium text-xs backdrop-blur-md transition-all shadow-[0_0_15px_rgba(245,158,11,0.15)] active:scale-95"
+            title="View Vasu's Resume (PDF)"
+          >
+            <span>Resume</span>
+            <FileText className="w-3.5 h-3.5 text-amber-400" />
+          </a>
+
+          {/* Sweet & Short Story Prompt (Fades away once user scrolls) */}
+          <AnimatePresence>
+            {scrollProgress < 0.08 && (
+              <motion.button
+                type="button"
+                onClick={() => onSelectChapter && onSelectChapter(1)}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6, transition: { duration: 0.25 } }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="group inline-flex items-center gap-2 px-3 sm:px-3.5 py-2 sm:py-2.5 rounded-full bg-purple-500/10 hover:bg-purple-500/20 border border-purple-400/30 hover:border-purple-400/60 text-purple-200 hover:text-white font-medium text-xs backdrop-blur-md transition-all cursor-pointer shadow-[0_0_15px_rgba(168,85,247,0.15)] active:scale-95"
+                aria-label="Scroll to unfold story"
+                title="Scroll down or click to unfold the story"
+              >
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-400" />
+                </span>
+                <span>Scroll to unfold story</span>
+                <ChevronDown className="w-3.5 h-3.5 text-purple-300 group-hover:translate-y-0.5 transition-transform animate-bounce" />
+              </motion.button>
+            )}
+          </AnimatePresence>
         </motion.div>
       </div>
 

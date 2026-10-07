@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, FileText } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -29,13 +29,25 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Direct Contact Icons (No Text) */}
+        {/* Direct Actions: Resume & Contacts (Icon-only) */}
         <div className="flex items-center gap-2 sm:gap-2.5">
+          {/* Resume (PDF) */}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View Resume (PDF)"
+            aria-label="Resume"
+            className="p-2 sm:p-2.5 rounded-full bg-white/5 border border-white/10 hover:border-amber-400/50 hover:bg-amber-500/10 text-slate-300 hover:text-amber-400 backdrop-blur-sm transition-all duration-300 shadow-sm hover:scale-105 active:scale-95"
+          >
+            <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+          </a>
+
           {/* Phone / Call */}
           <a
-            href="tel:95918135617"
-            title="Call: 95918135617"
-            aria-label="Call: 95918135617"
+            href="tel:9591835617"
+            title="Call: 9591835617"
+            aria-label="Call: 9591835617"
             className="p-2 sm:p-2.5 rounded-full bg-white/5 border border-white/10 hover:border-emerald-400/50 hover:bg-emerald-500/10 text-slate-300 hover:text-emerald-400 backdrop-blur-sm transition-all duration-300 shadow-sm hover:scale-105 active:scale-95"
           >
             <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />

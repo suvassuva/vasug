@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowUp, Mail, Phone } from "lucide-react";
+import { ArrowUp, Mail, Phone, FileText } from "lucide-react";
 import { GithubIcon, WhatsAppIcon } from "@/components/ui/Icons";
 
 export default function Footer() {
@@ -40,22 +40,22 @@ export default function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
             {/* Phone Call */}
             <a
-              href="tel:95918135617"
+              href="tel:9591835617"
               className="p-2 sm:p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-400/40 hover:bg-emerald-500/10 text-slate-300 hover:text-emerald-400 transition-all hover:scale-105 active:scale-95"
-              aria-label="Call 95918135617"
-              title="Call: 95918135617"
+              aria-label="Call 9591835617"
+              title="Call: 9591835617"
             >
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </a>
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/95918135617"
+              href="https://wa.me/9591835617"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 sm:p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-400/40 hover:bg-emerald-500/10 text-slate-300 hover:text-emerald-400 transition-all hover:scale-105 active:scale-95"
               aria-label="WhatsApp"
-              title="WhatsApp: 95918135617"
+              title="WhatsApp: 9591835617"
             >
               <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </a>
@@ -80,6 +80,18 @@ export default function Footer() {
               title="GitHub"
             >
               <GithubIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            </a>
+
+            {/* Resume */}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 sm:p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-amber-400/40 hover:bg-amber-500/10 text-slate-300 hover:text-amber-400 transition-all hover:scale-105 active:scale-95"
+              aria-label="Resume (PDF)"
+              title="View Resume (PDF)"
+            >
+              <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </a>
 
             {/* Back to top */}
